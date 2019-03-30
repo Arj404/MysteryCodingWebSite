@@ -2,22 +2,25 @@ body {
     height: 100vh;
     background: #b12a5b;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom,
+    background: -webkit-linear-gradient(
+        to bottom,
         #ff8177 0%,
         #ff867a 0%,
         #ff8c7f 21%,
         #f99185 52%,
         #cf556c 78%,
-        #b12a5b 100%);
+        #b12a5b 100%
     );
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom,
+    background: linear-gradient(
+        to bottom,
         #ff8177 0%,
         #ff867a 0%,
         #ff8c7f 21%,
         #f99185 52%,
         #cf556c 78%,
-        #b12a5b 100%);
+        #b12a5b 100%
+    );
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -60,7 +63,7 @@ h2 {
     padding: 15px 32px;
     text-decoration: none;
     font-size: 16px;
-    align-items: flex-start
+    align-items: flex-start;
 }
 
 #formContent {
