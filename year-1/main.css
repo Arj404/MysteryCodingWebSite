@@ -1,15 +1,15 @@
 body {
     height: 100vh;
-    background: #4facfe;
+    background: #c31432;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom,
-        #4facfe 0%, 
-        #00f2fe 100%);
+        #c31432 0%, 
+        #240b36 100%);
     );
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom,
-        #4facfe 0%, 
-        #00f2fe 100%);
+        #c31432 0%, 
+        #240b36 100%);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -76,7 +76,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 #button{
-    background-color: #4facfe;
+    background-color: #c31432;
     border: none;
     color: white;
     padding: 15px 80px;
@@ -85,8 +85,8 @@ h2.active {
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
-    -webkit-box-shadow: 0 10px 40px #4facfe;
-    box-shadow: 0 10px 40px 0 #4facfe;
+    -webkit-box-shadow: 0 10px 40px #c31432;
+    box-shadow: 0 10px 40px 0 #c31432;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     margin: 5px 20px 40px 20px;
@@ -98,9 +98,9 @@ h2.active {
 }
 
 #button:hover {
-    background-color: #00f2fe;
-    -webkit-box-shadow: 0 12px 40px 1px #00f2fe;
-    box-shadow: 0 12px 40px 1px #00f2fe;
+    background-color: #240b36;
+    -webkit-box-shadow: 0 12px 40px 1px #240b36;
+    box-shadow: 0 12px 40px 1px #240b36;
 }
 
 #button:active {

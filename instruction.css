@@ -1,23 +1,15 @@
 body {
     height: 100vh;
-    background: #b12a5b;
+    background: #8E0E00;
     /* fallback for old browsers */
     background: -webkit-linear-gradient(to bottom,
-        #ff8177 0%,
-        #ff867a 0%,
-        #ff8c7f 21%,
-        #f99185 52%,
-        #cf556c 78%,
-        #b12a5b 100%);
+        #1F1C18,
+        #8E0E00);
     );
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to bottom,
-        #ff8177 0%,
-        #ff867a 0%,
-        #ff8c7f 21%,
-        #f99185 52%,
-        #cf556c 78%,
-        #b12a5b 100%);
+        #1F1C18,
+        #8E0E00);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -84,7 +76,7 @@ h2.active {
 /* FORM TYPOGRAPHY*/
 
 #button{
-    background-color: #b12a5b;
+    background-color: #1F1C18;
     border: none;
     color: white;
     padding: 15px 80px;
@@ -93,8 +85,8 @@ h2.active {
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
-    -webkit-box-shadow: 0 10px 40px #b12a5b;
-    box-shadow: 0 10px 40px 0 #b12a5b;
+    -webkit-box-shadow: 0 10px 40px #1F1C18;
+    box-shadow: 0 10px 40px 0 #1F1C18;
     -webkit-border-radius: 5px 5px 5px 5px;
     border-radius: 5px 5px 5px 5px;
     margin: 5px 20px 40px 20px;
@@ -106,9 +98,9 @@ h2.active {
 }
 
 #button:hover {
-    background-color: #ff8177;
-    -webkit-box-shadow: 0 12px 40px 1px #ff8177;
-    box-shadow: 0 12px 40px 1px #ff8177;
+    background-color: #8E0E00;
+    -webkit-box-shadow: 0 12px 40px 1px #8E0E00;
+    box-shadow: 0 12px 40px 1px #8E0E00;
 }
 
 #button:active {
