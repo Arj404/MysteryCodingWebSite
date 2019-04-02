@@ -1,0 +1,53 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Lato:100,300,600"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link type="text/css" rel="stylesheet" href="{% static 'css/index/index.css' %}" />
+
+        <title>MysteryCoding</title>
+    </head>
+
+    <body>
+        <section>
+            <a class="link" href="{% url 'login' %}">
+                <video src="{% static 'alltut-smoke.mp4' %}" autoplay muted></video>
+                <h1>
+                    <span>M</span>
+                    <span>Y</span>
+                    <span>S</span>
+                    <span>T</span>
+                    <span>E</span>
+                    <span>R</span>
+                    <span>Y</span>
+                    <br />
+                    <span> C</span>
+                    <span>O</span>
+                    <span>D</span>
+                    <span>I</span>
+                    <span>N</span>
+                    <span>G</span>
+                </h1>
+
+                <img alt = "image" src="{% static 'solve_final.png' %}" width="700px" height="750px" />
+            </a>
+        </section>
+    </body>
+</html>
