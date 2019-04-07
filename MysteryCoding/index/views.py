@@ -5,7 +5,7 @@ from index.form import Register
 
 
 def log(request):
-    login = form.Register()
+    login = Register()
     if request.method == 'POST':
         form1 = form.FormName(request.POST)
         if form1.is_valid():

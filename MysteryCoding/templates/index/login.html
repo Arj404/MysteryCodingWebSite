@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css" />
     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link type="text/css" rel="stylesheet" href="{% static 'css/index/login.css" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/index/login.css' %}" />
 
     <title>MysteryCoding</title>
 </head>
@@ -20,7 +21,7 @@
                 </div>
 
                 <!-- Login Form -->
-                <form action="{% url instruction %}" method="post">
+                <form action="{% url 'instruction' %}" method="post">
                     <input type="text" id="name" class="fadeIn second" name="login" placeholder="Name">
                     <input type="text" id="roll_number" class="fadeIn third" name="login" placeholder="Roll Number">
                     <input type="email" id="email" class="fadeIn fourth" name="login" placeholder="E-mail Address">
