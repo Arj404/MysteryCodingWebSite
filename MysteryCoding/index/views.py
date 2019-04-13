@@ -1,19 +1,21 @@
-from django.shortcuts import render
-from index.form import Register
+from django.shortcuts import render, redirect
+from .form import Register
+from django.contrib import messages
 
 # Create your views here.
 
 
-def log(request):
-    login = Register()
+def register(request):
     if request.method == 'POST':
-        form1 = form.FormName(request.POST)
-        if form1.is_valid():
-            print("valid")
-    context = {
-        "login": login,
-    }
-    return render(request, 'index/login.html', context)
+        form = Register(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'{username} registered')
+            return redirect('login')
+    else:
+        form = Register()
+    return render(request, 'index/register.html', {'register' : form})
 
 
 def index(request):

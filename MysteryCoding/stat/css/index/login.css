@@ -1,5 +1,6 @@
 body {
     height: 100vh;
+    color: ghostwhite;
     background: #000000; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to bottom,
@@ -20,9 +21,8 @@ a {
     font-weight: 400;
 }
 
-h5 {
+h4 {
     text-align: center;
-
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
@@ -47,20 +47,11 @@ h5 {
     transform: translateY(-50%);
 }
 
-#year-1,
-#year-2 {
-    padding: 15px 32px;
-    text-decoration: none;
-    font-size: 16px;
-    align-items: flex-start;
-}
 
 #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
     background: #440000;
-    /* fallback for old browsers */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 10px;
     width: 90%;
     max-width: 450px;
@@ -70,27 +61,14 @@ h5 {
     text-align: center;
 }
 
-/*
-#formFooter {
-    background-color: #200000;
+/*h2.inactive {*/
+/*    color: #cccccc;*/
+/*}*/
 
-    padding: 25px;
-    text-align: center;
-    -webkit-border-radius: 0 0 10px 10px;
-    border-radius: 0 0 10px 10px;
-}
-*/
-
-/* TABS */
-
-h2.inactive {
-    color: #cccccc;
-}
-
-h2.active {
-    color: #0d0d0d7c;
-    border-bottom: 2px solid #ff8c7f;
-}
+/*h2.active {*/
+/*    color: #0d0d0d7c;*/
+/*    border-bottom: 2px solid #ff8c7f;*/
+/*}*/
 
 /* FORM TYPOGRAPHY*/
 
@@ -137,7 +115,9 @@ input[type="reset"]:active {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="number"],
+input[type="password"] {
     background-color: #110000;
     border: none;
     color: white;
@@ -146,7 +126,7 @@ input[type="email"] {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px;
+    margin: 0px;
     width: 85%;
     border: 1px solid #f6f6f6;
     -webkit-transition: all 0.5s ease-in-out;
@@ -159,12 +139,17 @@ input[type="email"] {
 }
 
 input[type="text"]:focus,
-input[type="email"]:focus {
-    background-color: #330000;
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus{
+    background-color: whitesmoke;
     border-bottom: 1px solid white;
 }
 
-input[type="text"]:placeholder input[type="email"]:placeholder {
+input[type="text"]:placeholder,
+input[type="email"]:placeholder,
+input[type="number"]:placeholder,
+input[type="password"]:placeholder{
     color: #110000;
 }
 
@@ -259,7 +244,7 @@ input[type="text"]:placeholder input[type="email"]:placeholder {
     -moz-animation-delay: 0.4s;
     animation-delay: 0.4s;
     margin: 20px;
-    color: white;
+    color: whitesmoke;
 }
 
 .fadeIn.second {
@@ -325,4 +310,15 @@ input[type="text"]:placeholder input[type="email"]:placeholder {
 
 #icon {
     width: 60%;
+}
+
+.form-group{
+    color:white;
+
+}
+.asteriskField{
+    color: red;
+}
+#id_username{
+    font-size: 10px;
 }

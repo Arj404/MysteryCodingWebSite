@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css" />
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <!-- css block -->
+    {% block css %}
+    {% endblock %}
+    <link rel="icon" href="{% static 'icon.png' %}">
+     <title>
+        Arcanum
+    </title>
+</head>
+
+<body>
+<div class="chapter-logo">
+        <tr>
+            <a href="https://www.msctiet.co.in/" target="_blank">
+            <td>
+                <img src="{% static 'icon.png' %}" alt="MSC Logo">
+            </td>
+            <td>
+                <p id="logotext">MICROSOFT STUDENT CHAPTER</p>
+            </td>
+            </a>
+        </tr>
+
+    </div>
+    <!-- body block-->
+    {% block body %}
+    {% endblock %}
+</body>
+
+</html>

@@ -1,8 +1,18 @@
 from django import forms
-from index.models import login
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserCreationForm
 
 
-class Register(forms.ModelForm):
+class Register(UserCreationForm):
+    email = forms.EmailField()
+    roll_number = forms.IntegerField()
+    name = forms.CharField()
+
     class Meta:
-        model = login
-        fields = ('name', 'roll_number', 'email', 'password')
+        model = User
+        fields = ['username', 'name', 'roll_number', 'email', 'password1', 'password2']
+        help_texts = {
+            'username': None,
+            'password1': None,
+            'password2': None,
+        }
