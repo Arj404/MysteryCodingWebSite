@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% load crispy_forms_tags %}
-<!--{% block css %}-->
+{% block css %}
     <link type="text/css" rel="stylesheet" href="{% static 'css/index/register.css' %}" />
 {% endblock %}
 
@@ -12,18 +12,11 @@
                 <div class="fadeIn first">
                     <h4>ARCANUM</h4>
                 </div>
-
-                <!-- Login Form -->
                 <form  method="POST">
                    {% csrf_token %}
                     <fieldset>
                        {{ form|crispy }}
                     </fieldset>
-
-<!--                    <input type="text" id="Username" class="fadeIn second" name="login" placeholder="Name">-->
-<!--                    <input type="int" id="roll_number" class="fadeIn third" name="login" placeholder="Roll Number">-->
-<!--                    <input type="email" id="email" class="fadeIn fourth" name="login" placeholder="E-mail Address">-->
-<!--                    <input type="text" id="password" class="fadeIn fifth" name="login" placeholder="Password"><br>-->
                     <input type="submit" class="fadeIn sixth" value="Login"><br>
                 </form>
                 <small>

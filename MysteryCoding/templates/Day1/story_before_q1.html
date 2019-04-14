@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,7 +18,7 @@
             rel="stylesheet"
             type="text/css"
         />
-        <link type="text/css" rel="stylesheet" href="typewriter.css" />
+        <link type="text/css" rel="stylesheet" href="{% static 'css/day1/story_before_q1.css' %}" />
 
         <link
             href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -28,7 +29,7 @@
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
 
-        <title>MysteryCoding</title>
+        <title>Arcanum</title>
     </head>
 
     <body>
@@ -36,7 +37,7 @@
             <button class="btn left" onclick="skip()">
                 Speed Up <i class="fa fa-angle-double-right"></i>
             </button>
-            <a class="btn" href="./email_q1.html">
+            <a class="btn" href="{% url 'email' %}">
                 <span class="hidden_text">Inspect Mails </span>
                 <i class="fa fa-arrow-right"></i>
             </a>

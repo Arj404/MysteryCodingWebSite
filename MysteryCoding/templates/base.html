@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<div class="chapter-logo">
+    <div class="chapter-logo">
         <tr>
             <a href="https://www.msctiet.co.in/" target="_blank">
             <td>
@@ -27,7 +27,14 @@
             </td>
             </a>
         </tr>
-
+    </div>
+    <div style="position: relative; text-align: right;right:15px; top:10px; color:whitesmoke;">
+        {% if user.is_authenticated %}
+            Hi {{ user.username }}<br>
+            <small><a href="{% url 'logout' %}">logout</a></small>
+        {% else %}
+        <p><small style="color: #5a6268">You are not logged in</small> <a href="{% url 'login' %}">login</a></p>
+        {% endif %}
     </div>
     {% block body %}
     {% endblock %}
