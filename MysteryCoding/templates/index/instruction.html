@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/index/instruction.css' %}" />
+{% endblock %}
+
+{% block body %}
+    <div>
+        <div class="wrapper fadeInDown">
+            <div id="Content">
+                <div class="fadeIn first">
+                    <h5>INSTRUCTIONS</h5>
+                </div>
+                <div>
+                    <!--intruction-->
+                    <button id="button" class="fadeIn fourth" ><a href="year-1/main.html">Start Game !</a></button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+{% endblock %}
