@@ -14,3 +14,4 @@ to load static - python manage.py collectstatic<br>
 python3.7<br>
 django 2.2<br>
 pillow 6.0 <br>
+django-crispy-forms<br>
