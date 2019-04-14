@@ -137,7 +137,8 @@ input[type="reset"]:active {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
     background-color: #110000;
     border: none;
     color: white;
@@ -282,14 +283,11 @@ input[type="text"]:placeholder input[type="email"]:placeholder {
     animation-delay: 1s;
     margin: 20px;
 }
-
 .fadeIn.fifth {
-    -webkit-animation-delay: 1.2s;
-    -moz-animation-delay: 1.2s;
-    animation-delay: 1.2s;
-    margin: 8px;
-    color: white;
-    text-align: left;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+    margin: 20px;
 }
 
 /* Simple CSS3 Fade-in Animation */
