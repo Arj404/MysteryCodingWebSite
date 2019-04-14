@@ -5,7 +5,7 @@ from django.contrib import messages
 # Create your views here.
 
 
-def register(request):
+def form(request):
     if request.method == 'POST':
         form = Register(request.POST)
         if form.is_valid():
@@ -15,7 +15,7 @@ def register(request):
             return redirect('login')
     else:
         form = Register()
-    return render(request, 'index/register.html', {'register' : form})
+    return render(request, 'registration/register.html', {'form' : form})
 
 
 def index(request):
