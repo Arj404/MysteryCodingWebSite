@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .form import Ans1, Ans2, Ans3
+from .form import *
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -7,15 +7,21 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def email(request):
-    form = Ans1()
-    if request.method == 'POST':
-        form = Ans1(request.POST)
+    print("test1")
+    if request.method == "POST":
+        form = Answer(request.POST)
         if form.is_valid():
+            post = form.save()
+            post.author = request.user
             form.save()
-            return redirect('ip')
+            return redirect('/')
+        else:
+            print("error")
     else:
-        form = Ans1()
-    return render(request, 'day1/email_q1.html', {'ans': form})
+        form = Answer()
+    return render(request, 'day1/email_q1.html', {'ans1_1': form})
+
+
 
 
 @login_required
@@ -28,5 +34,7 @@ def story1(request):
 def ip(request):
     return render(request, 'day1/ip.html')
 
-
+@login_required
+def riddle(request):
+    return render(request, 'day1/riddle_q2.html')
 

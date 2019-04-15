@@ -1,5 +1,4 @@
 {% load staticfiles %}
-{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -18,7 +17,7 @@
             rel="stylesheet"
             href="https://www.w3schools.com/w3css/4/w3.css"
         />
-        <link rel="stylesheet" href="{% static 'css/day1/email_q1.css' %}" />
+        <link rel="stylesheet" href="{% static 'css/day1/riddle_q2.css' %}" />
 
         <title>Mail Box</title>
     </head>
@@ -27,7 +26,7 @@
             <div class="nano-content">
                 <div class="logo-container">
                     <span class="logo glyphicon glyphicon-envelope"></span>QUEST
-                    1
+                    2
                 </div>
                 <a class="compose-button">Compose</a>
                 <menu class="menu-segment">
@@ -105,32 +104,15 @@
             <div class="overlay"></div>
             <header class="header">
                 <div class="search-box">
-<!--                    <form id="ans1_1" method="post" action="{% url 'riddle' %}">-->
-<!--                        {% csrf_token %}-->
-<!--                        <fieldset>-->
-<!--                            {{ ans1_1 | crispy }}-->
-<!--                        </fieldset>-->
-<!--                        <input type="submit" value="Submit">-->
-<!--                    </form>-->
-                    <form role="form" method="post">
-                        {% csrf_token %}
-                        <div class="form-group">
-                            {{field.errors}}
-                            <label class="sr-only" for="ans1_1">Answer</label>
-                            <input class="form-control" type="text" id="ans1_1" placeholder="answer">
-                            <p class="help-block text-danger"/>
-                        </div>
-                        <div class="text-center">
-                    <button class="btn btn-block btn-round btn-d" type="submit">Submit</button>
-                  </div>
-                </form>
+                    <input placeholder="Enter the murder weapon(two words)..." />
                 </div>
                 <h1 class="page-title">
                     <a class="sidebar-toggle-btn trigger-toggle-sidebar"
                         ><span class="line"></span><span class="line"></span
                         ><span class="line"></span
                         ><span class="line line-angle1"></span
-                        ><span class="line line-angle2"></span></a>ARCANUM<a
+                        ><span class="line line-angle2"></span></a
+                    >ARCANUM<a
                         ><span
                             class="icon glyphicon glyphicon-chevron-down"
                         ></span
@@ -157,8 +139,8 @@
                                 <div class="subject">
                                     Some Subject(you are in trouble)
                                     <span class="teaser"
-                                       Welcome to ARCANUM
-                                    </span>
+                                       Welcome to ARCANUM</span
+                                    >
                                 </div>
                                 <div class="date">11:49 am</div>
                             </div>
@@ -491,28 +473,18 @@
                                 <div class="right">March 6, 2014, 20:08 pm</div>
                             </div>
                             <div class="message">
+                               
                                 <p>
-                                    | The every winged bring, whose life. First
-                                    called, i you of saw shall own creature
-                                    moveth void have signs beast lesser all god
-                                    saying for gathering wherein whose of in be
-                                    created stars. Them whales upon life divide
-                                    earth own.
+                                    | I am strong enough to smash a ship but fear the sun
+                                    <br><br>
+                                    | I am a letter less then anxiety and a letter more than pride but am 
+                                    dangerous more then both of them combined, I am used to conclude wars, and to initiate them.
+                                    I can be an object or a word and a source of mayhem.
                                 </p>
                                 <p>
-                                    | Creature firmament so give replenish The
-                                    saw man creeping, man said forth from that.
-                                    Fruitful multiply lights air. Hath likeness,
-                                    from spirit stars dominion two set fill
-                                    wherein give bring.
+                                    Is this a riddle? or is this just an illusion, like everything in the world..
                                 </p>
-                                <p>
-                                    | Gathering is. Lesser Set fruit subdue
-                                    blessed let. Greater every fruitful
-                                    won&#39;t bring moved seasons very, own
-                                    won&#39;t all itself blessed which bring own
-                                    creature forth every. Called sixth light.
-                                </p>
+                                
                             </div>
                             <div class="tool-box">
                                 <a
@@ -559,6 +531,6 @@
             </div>
         </div>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script src="{% static 'js/day1/email_q1.js' %}"></script>
+        <script src="{% static 'js/day1/riddle_q2.js' %}"></script>
     </body>
 </html>
