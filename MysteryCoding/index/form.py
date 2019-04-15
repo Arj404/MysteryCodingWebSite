@@ -15,4 +15,5 @@ class Register(UserCreationForm):
             'username': None,
             'password1': None,
             'password2': None,
+            'password': None,
         }

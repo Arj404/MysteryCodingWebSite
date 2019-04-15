@@ -1,29 +1,28 @@
-{% extends 'base.html' %} {% load staticfiles %} {% load crispy_forms_tags %} {% block css %}
-<link type="text/css" rel="stylesheet" href="{% static 'css/index/register.css' %}" />
-{% endblock %} {% block body %}
-<div>
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <div class="fadeIn first">
-                <h4>ARCANUM</h4>
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+{% block css %}
+    <link type="text/css" rel="stylesheet" href="{% static 'css/index/register.css' %}" />
+{% endblock %}
+
+{% block body%}
+    <div>
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <div class="fadeIn first">
+                    <h4>ARCANUM</h4>
+                </div>
+                <form  method="POST">
+                   {% csrf_token %}
+                    <fieldset>
+                       {{ form|crispy }}
+                    </fieldset>
+                    <input type="submit" class="fadeIn sixth" value="Login"><br>
+                </form>
+                <small>
+                    Need an account? <a href="{% url 'register' %}">Sign Up</a><br><br>
+                </small>
             </div>
-
-            <!-- Login Form -->
-            <form method="POST">
-                {% csrf_token %}
-                <fieldset>
-                    {{ form | crispy }}
-                </fieldset>
-
-                <!--                    <input type="text" id="Username" class="fadeIn second" name="login" placeholder="Name">-->
-                <!--                    <input type="int" id="roll_number" class="fadeIn third" name="login" placeholder="Roll Number">-->
-                <!--                    <input type="email" id="email" class="fadeIn fourth" name="login" placeholder="E-mail Address">-->
-                <!--                    <input type="text" id="password" class="fadeIn fifth" name="login" placeholder="Password"><br>-->
-                <input type="submit" class="fadeIn sixth" value="Login" /><br />
-            </form>
-            <small>
-                Need an account? <a href="{% url 'register' %}">Sign Up</a><br /><br />
-            </small>
         </div>
     </div>
 </div>
