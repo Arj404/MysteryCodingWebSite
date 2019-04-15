@@ -323,9 +323,29 @@ a:hover {
 #main .header .search-box .icon {
     transition-duration: 0.3s;
 }
+
 #main .header .search-box input {
     position: absolute;
-    top: 0;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-indent: 15px;
+    height: 40px;
+    z-index: 2;
+    outline: none;
+    color: #999;
+    background: transparent;
+    border: 2px solid #efefef;
+    border-radius: 5px;
+    transition-timing-function: cubic-bezier(0.3, 1.5, 0.6, 1);
+}
+#main .header .search-box fieldset {
+    position: absolute;
+    top: 30px;
     right: 0;
     bottom: 0;
     width: 100%;

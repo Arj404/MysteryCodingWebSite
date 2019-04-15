@@ -3,6 +3,7 @@ from index import views
 from django.contrib.auth import views as auth_views
 from django.conf.urls import include
 
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('', include('django.contrib.auth.urls')),
@@ -11,3 +12,4 @@ urlpatterns = [
     path('instruction/', views.instruction, name='instruction'),
 
 ]
+

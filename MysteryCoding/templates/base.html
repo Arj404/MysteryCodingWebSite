@@ -30,8 +30,9 @@
     </div>
     <div style="position: relative; text-align: right;right:15px; top:10px; color:whitesmoke;">
         {% if user.is_authenticated %}
+            <a href="{% url 'logout' %}">
             Hi {{ user.username }}<br>
-            <small><a href="{% url 'logout' %}">logout</a></small>
+            <small>logout</small></a>
         {% else %}
         <p><small style="color: #5a6268">You are not logged in</small> <a href="{% url 'login' %}">login</a></p>
         {% endif %}

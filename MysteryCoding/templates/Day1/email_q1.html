@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load crispy_forms_tags %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -104,7 +105,13 @@
             <div class="overlay"></div>
             <header class="header">
                 <div class="search-box">
-                    <input placeholder="Enter your discovery..." />
+                    <form method="POST">
+                        {% csrf_token %}
+                        <fieldset>
+                            {{ ans|crispy }}
+                        </fieldset>
+                        <input type="submit" value="Submit">
+                    </form>
                 </div>
                 <h1 class="page-title">
                     <a class="sidebar-toggle-btn trigger-toggle-sidebar"
@@ -139,8 +146,8 @@
                                 <div class="subject">
                                     Some Subject(you are in trouble)
                                     <span class="teaser"
-                                       Welcome to ARCANUM</span
-                                    >
+                                       Welcome to ARCANUM
+                                    </span>
                                 </div>
                                 <div class="date">11:49 am</div>
                             </div>
