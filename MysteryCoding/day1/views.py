@@ -12,7 +12,7 @@ def email(request):
         form = Ans1(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('login')
+            return redirect('ip')
     else:
         form = Ans1()
     return render(request, 'day1/email_q1.html', {'ans': form})
@@ -22,4 +22,11 @@ def email(request):
 def story1(request):
 
     return render(request, 'day1/story_before_q1.html')
+
+
+@login_required
+def ip(request):
+    return render(request, 'day1/ip.html')
+
+
 

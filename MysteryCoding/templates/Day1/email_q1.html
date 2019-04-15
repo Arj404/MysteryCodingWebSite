@@ -105,7 +105,7 @@
             <div class="overlay"></div>
             <header class="header">
                 <div class="search-box">
-                    <form method='POST'>
+                    <form method='POST' action="{% url 'ip' %}">
                         {% csrf_token %}
                         <fieldset>
                             {{ ans.as_p|crispy }}
