@@ -7,7 +7,7 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def email(request):
-    # form = Ans1()
+    form = Ans1()
     if request.method == 'POST':
         form = Ans1(request.POST)
         if form.is_valid():

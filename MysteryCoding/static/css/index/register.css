@@ -1,18 +1,8 @@
 body {
-    height: 100vh;
+    height: 100%;
     line-height: 1;
     color: ghostwhite;
     background: #000000; /* fallback for old browsers */
-    background: -webkit-linear-gradient(
-        to bottom,
-        #330000,
-        #000000
-    ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to bottom,
-        #330000,
-        #000000
-    ); /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+*/
 }
 
 a {
@@ -54,7 +44,6 @@ h4 {
     transform: translateY(-50%);
 }
 
-
 #formContent {
     -webkit-border-radius: 10px 10px 10px 10px;
     border-radius: 10px 10px 10px 10px;
@@ -67,7 +56,6 @@ h4 {
     box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
     text-align: center;
 }
-
 
 input[type="button"],
 input[type="submit"],
@@ -114,7 +102,7 @@ input[type="reset"]:active {
 input[type="text"],
 input[type="email"],
 input[type="number"],
-input[type="password"]{
+input[type="password"] {
     background-color: #110000;
     border: none;
     color: white;
@@ -138,7 +126,7 @@ input[type="password"]{
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="number"]:focus,
-input[type="password"]:focus{
+input[type="password"]:focus {
     background-color: whitesmoke;
     border-bottom: 1px solid white;
 }
@@ -146,7 +134,7 @@ input[type="password"]:focus{
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="number"]::placeholder,
-input[type="password"]::placeholder{
+input[type="password"]::placeholder {
     color: #110000;
 }
 
@@ -309,20 +297,19 @@ input[type="password"]::placeholder{
     width: 60%;
 }
 
-.form-group{
-    color:white;
-
+.form-group {
+    color: white;
 }
-.asteriskField{
+.asteriskField {
     color: red;
 }
-#id_username{
+#id_username {
     font-size: 10px;
 }
-.form-control{
+.form-control {
     align-self: center;
     width: 80%;
 }
-.helptext{
-  visibility: hidden;
+.helptext {
+    visibility: hidden;
 }
