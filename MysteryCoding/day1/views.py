@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 def email(request):
     print("test1")
     if request.method == "POST":
-        form = Answer(request.POST)
+        form = Answer(request.POST ,instance=request.user)
         if form.is_valid():
             post = form.save()
             post.author = request.user
